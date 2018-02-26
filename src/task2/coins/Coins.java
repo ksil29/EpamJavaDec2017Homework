@@ -4,12 +4,10 @@ public class Coins {
 
     enum Weight {LIGHTER, HEAVIER}
 
-    ;
-
     public static void fakeCoin(int[] coins) {
 
-        int fakeNumber = -1;
-        Weight weight = Weight.LIGHTER;
+        int fakeNumber;
+        Weight weight;
 
         if (coins[0] + coins[1] + coins[2] + coins[3] == coins[4] + coins[5] + coins[6] + coins[7]) {
             if (coins[8] + coins[9] + coins[10] == coins[0] + coins[1] + coins[2]) {
@@ -50,7 +48,7 @@ public class Coins {
                     } else {
                         fakeNumber = 6;
                     }
-                } else if (coins[0] + coins[1] + coins[4] > coins[2] + coins[3] + coins[8]){
+                } else if (coins[0] + coins[1] + coins[4] > coins[2] + coins[3] + coins[8]) {
                     weight = Weight.HEAVIER;
                     if (coins[0] > coins[1]) {
                         fakeNumber = 1;
@@ -80,7 +78,7 @@ public class Coins {
                     } else {
                         fakeNumber = 6;
                     }
-                } else if (coins[0] + coins[1] + coins[4] < coins[2] + coins[3] + coins[8]){
+                } else if (coins[0] + coins[1] + coins[4] < coins[2] + coins[3] + coins[8]) {
                     weight = Weight.LIGHTER;
                     if (coins[0] < coins[1]) {
                         fakeNumber = 1;
