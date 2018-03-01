@@ -1,6 +1,7 @@
 package task2.snake;
 
-public class Main {
+public class ArraySnakePrinterTest {
+
     static int[][] testRectangle = {{1, 2, 3, 4, 5},
                                     {12, 13, 14, 15, 6},
                                     {11, 10, 9, 8, 7}};
@@ -13,16 +14,16 @@ public class Main {
     static int[][] testNull = null;
 
     public static void main(String[] args) {
-        Snake.printSnake(testRectangle);
+        ArraySnakePrinter.printArrayBySnakePattern(testRectangle);
         System.out.println();
-        Snake.printSnake(testSquare);
+        ArraySnakePrinter.printArrayBySnakePattern(testSquare);
         System.out.println();
-        Snake.printSnake(testLine);
+        ArraySnakePrinter.printArrayBySnakePattern(testLine);
         System.out.println();
-        Snake.printSnake(testSingle);
+        ArraySnakePrinter.printArrayBySnakePattern(testSingle);
         System.out.println();
-        Snake.printSnake(testEmpty);
-        Snake.printSnake(testNull);
-        Snake.printSnake(null);
+        ArraySnakePrinter.printArrayBySnakePattern(testEmpty);
+        ArraySnakePrinter.printArrayBySnakePattern(testNull);
+        ArraySnakePrinter.printArrayBySnakePattern(null);
     }
 }

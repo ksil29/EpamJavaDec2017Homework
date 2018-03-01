@@ -1,10 +1,10 @@
 package task2.coins;
 
-public class Coins {
+public class FakeCoinDetector {
 
-    enum Weight {LIGHTER, HEAVIER}
+    private enum Weight {LIGHTER, HEAVIER}
 
-    public static void fakeCoin(int[] coins) {
+    public static void detectFakeCoin(int[] coins) {
 
         int fakeNumber;
         Weight weight;

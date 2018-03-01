@@ -1,12 +1,12 @@
 package task2.snake;
 
-public class Snake {
+public class ArraySnakePrinter {
 
     private enum Direction {
         RIGHT, DOWN, LEFT, UP
     }
 
-    public static void printSnake(int[][] array) {
+    public static void printArrayBySnakePattern(int[][] array) {
         if (array == null || array.length == 0) {
             return;
         }
