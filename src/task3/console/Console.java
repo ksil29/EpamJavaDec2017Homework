@@ -32,6 +32,20 @@ public class Console {
             case "mp3saver":
                 Mp3Saver.main(new String[0]);
                 break;
+            case "zip":
+                if (args.length != 3) {
+                    System.out.println("Wrong number of arguments");
+                } else {
+                    ConsoleUtils.zip(args[1], args[2]);
+                }
+                break;
+            case "unzip":
+                if (args.length != 3) {
+                    System.out.println("Wrong number of arguments");
+                } else {
+                    ConsoleUtils.unzip(args[1], args[2]);
+                }
+                break;
             default:
                 System.out.println("Wrong command, use -h to see help");
                 break;
